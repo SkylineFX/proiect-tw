@@ -1,0 +1,3 @@
+categories = [
+  {img: "", name: ""}
+]
