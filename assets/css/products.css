@@ -1,0 +1,28 @@
+.product-carousel {
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.name {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.price {
+  display: flex;
+  font-size: 1.25em;
+  gap: 1em;
+  color: #5B9195;
+  font-weight: 500;
+}
+
+.price .old {
+  font-size: 1em;
+  text-decoration: line-through;
+  font-weight: 400;
+  color: black;
+}
+
+.info {
+  margin: 1em 0;
+}

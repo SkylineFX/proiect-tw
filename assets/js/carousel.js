@@ -47,10 +47,3 @@ function updateIndicator(slide) {
     updateIndicator(Number(e.target.id));
   })
 })
-
-let hamburger = document.getElementById('hamburger')
-let mobileNav = document.getElementById('mobile-nav')
-
-hamburger.addEventListener('click', () => {
-  mobileNav.classList.toggle("visible-nav")
-})
