@@ -7,14 +7,12 @@ let currentSlide = 0;
 loopSlides(0);
 function loopSlides(offset) {
   // remove current slide
-  //slides[currentSlide].style.display = "none"
   slides[currentSlide].classList.remove("shown");
 
   // get next slide number
   currentSlide = Math.abs((slides.length + (currentSlide + offset)) % slides.length);
 
   // show next slide
-  //slides[currentSlide].style.display = "block"
   slides[currentSlide].classList.add("shown");
   updateIndicator(currentSlide)
 };

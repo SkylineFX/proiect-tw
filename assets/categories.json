@@ -1,0 +1,134 @@
+{
+		"category": [
+			{
+				"name": "Indoor",
+				"image_url": "/assets/images/indoor.jpg",
+        "product": [
+          {
+            "name": "Golden Pothos",
+            "image_url": "/assets/images/golden-pothos.avif",
+            "price_new": "120.00",
+            "price_old": "150.00",
+            "description": "One of the most forgiving plants you can buy, this type of pothos grows quickly when given bright light but is incredibly tolerant of low light, making it an excellent low-maintenance plant for beginners.",
+            "size": "30cm",
+            "stock": 10,
+            "requirements": [
+              {"name": "Indirect lightning"},
+              {"name": "Regular Waterings (every 2 weeks)"},
+              {"name": "Moderate Humidity: 60-70%"}
+            ]
+          }
+        ]
+			},
+			{
+				"name": "",
+				"image_url": "",
+        "product": [
+          {
+            "name": "",
+            "image_url": "",
+            "price_new": "",
+            "price_old": "",
+            "description": "",
+            "size": "S",
+            "stock": 10,
+            "requirements": [
+              {"name": "Indirect lightning"},
+              {"name": "Regular Waterings (every 2 weeks)"},
+              {"name": "Fertilizing every 3 months"},
+              {"name": "Temperature: 20-25°C"},
+              {"name": "Moderate Humidity: 60-70%"}
+            ]
+          }
+        ]
+			},
+			{
+				"name": "",
+				"image_url": "",
+        "product": [
+          {
+            "name": "",
+            "image_url": "",
+            "price_new": "",
+            "price_old": "",
+            "description": "",
+            "size": "S",
+            "stock": 10,
+            "requirements": [
+              {"name": "Indirect lightning"},
+              {"name": "Regular Waterings (every 2 weeks)"},
+              {"name": "Fertilizing every 3 months"},
+              {"name": "Temperature: 20-25°C"},
+              {"name": "Moderate Humidity: 60-70%"}
+            ]
+          }
+        ]
+			},
+			{
+				"name": "",
+				"image_url": "",
+        "product": [
+          {
+            "name": "",
+            "image_url": "",
+            "price_new": "",
+            "price_old": "",
+            "description": "",
+            "size": "S",
+            "stock": 10,
+            "requirements": [
+              {"name": "Indirect lightning"},
+              {"name": "Regular Waterings (every 2 weeks)"},
+              {"name": "Fertilizing every 3 months"},
+              {"name": "Temperature: 20-25°C"},
+              {"name": "Moderate Humidity: 60-70%"}
+            ]
+          }
+        ]
+			},
+			{
+				"name": "",
+				"image_url": "",
+        "product": [
+          {
+            "name": "",
+            "image_url": "",
+            "price_new": "",
+            "price_old": "",
+            "description": "",
+            "size": "S",
+            "stock": 10,
+            "requirements": [
+              {"name": "Indirect lightning"},
+              {"name": "Regular Waterings (every 2 weeks)"},
+              {"name": "Fertilizing every 3 months"},
+              {"name": "Temperature: 20-25°C"},
+              {"name": "Moderate Humidity: 60-70%"}
+            ]
+          }
+        ]
+			},
+			{
+				"name": "",
+				"image_url": "",
+        "product": [
+          {
+            "name": "",
+            "image_url": "",
+            "price_new": "",
+            "price_old": "",
+            "description": "",
+            "size": "S",
+            "stock": 10,
+            "requirements": [
+              {"name": "Indirect lightning"},
+              {"name": "Regular Waterings (every 2 weeks)"},
+              {"name": "Fertilizing every 3 months"},
+              {"name": "Temperature: 20-25°C"},
+              {"name": "Moderate Humidity: 60-70%"}
+            ]
+          }
+        ]
+			}
+    ]
+  }
