@@ -96,14 +96,14 @@ body[data-theme="dark"] {
     filter: invert(0.05);
   }
 
-  .mobile-nav a:not(:last-of-type),
-  .mobile-nav button:not(last-of-type) {
-    border-bottom: 1px solid var(--primary);
-  }
-
   .cart-buttons img {
     filter: invert(0.85);
   }
+}
+
+.mobile-nav a:not(:last-of-type),
+.mobile-nav button:not(last-of-type) {
+  border-bottom: 1px solid var(--primary);
 }
 
 * {
