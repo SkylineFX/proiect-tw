@@ -10,7 +10,7 @@ window.addEventListener('load', function() {
   const productSize = this.document.getElementsByClassName("plant-size")[0];
   const productRequirements = this.document.getElementsByClassName("req-list")[0];
 
-  fetch('/assets/products.json')
+  fetch('./assets/products.json')
   .then((response) => response.json())
   .then((json) => {
     const product = (json.product.find(x => x.id == Number(productId)));

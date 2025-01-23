@@ -33,7 +33,7 @@ async function addToCart(currentProductId, newProduct = true) {
 }
 
 async function fetchProduct(currentProductId) {
-  const response = await fetch('/assets/products.json');
+  const response = await fetch('./assets/products.json');
   const json = await response.json();
   return json.product.find(product => product.id == currentProductId);
 }
@@ -57,7 +57,7 @@ function createCartItem(currentProduct) {
   const buttons = document.createElement('div');
   buttons.classList.add('cart-buttons');
   const remove = document.createElement('img');
-  remove.src = '/assets/images/bin.svg';
+  remove.src = './assets/images/bin.svg';
 
   remove.addEventListener('click', () => {
     let removedIdx = [...items.children].indexOf(cartItem) - 1; // first child is emptyMessage

@@ -2,7 +2,7 @@
 window.addEventListener('load', function() {
   let categories = document.getElementsByClassName('categories')
 
-  fetch('/assets/products.json')
+  fetch('./assets/products.json')
   .then((response) => response.json())
   .then((json) => {
 
@@ -24,7 +24,7 @@ window.addEventListener('load', function() {
       p.textContent = product.info.name
 
       const icon = document.createElement('img')
-      icon.src = 'assets/images/arrow-right.svg'
+      icon.src = './assets/images/arrow-right.svg'
 
       cardName.appendChild(p)
       cardName.appendChild(icon)
