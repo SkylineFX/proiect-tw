@@ -1,0 +1,113 @@
+{
+		"product": [
+			{
+        "id": 0,
+        "url": "product.html?id=0",
+        "info": 
+          {
+            "name": "Golden Pothos",
+            "image_url": "/assets/images/plants/golden-pothos.avif",
+            "price_new": "120.00",
+            "price_old": "150.00",
+            "description": "One of the most forgiving plants you can buy, this type of pothos grows quickly when given bright light but is incredibly tolerant of low light, making it an excellent low-maintenance plant for beginners.",
+            "size": "30cm",
+            "requirements": [
+              {"name": "🌤️ Indirect lighting"},
+              {"name": "🚿 Regular Waterings (every 2 weeks)"},
+              {"name": "💧 Moderate Humidity: 60%"}
+            ]
+          }
+        
+			},
+			{
+        "id": 1,
+        "url": "product.html?id=1",
+        "info":
+          {
+            "name": "Monstera deliciosa",
+            "image_url": "/assets/images/plants/monstera1.jpg",
+            "price_new": "90.00",
+            "price_old": "110.00",
+            "description": "Monstera deliciosa grows naturally in the rainforests of southern Mexico and Panama, so it's no surprise that it likes shade, warmth, and humidity. They are easy to care for and quite hard to kill.",
+            "size": "60cm",
+            "requirements": [
+              {"name": "🌤️ Indirect lighting"},
+              {"name": "🚿 Regular Waterings (every 2 weeks)"},
+              {"name": "🌡️ Temperature: 20-25°C"}
+            ]
+          }
+			},
+			{
+        "id": 2,
+        "url": "product.html?id=2",
+        "info":
+          {
+            "name": "String of hearts",
+            "image_url": "/assets/images/plants/string-of-hearts.jpg",
+            "price_new": "65.00",
+            "price_old": "90.00",
+            "description": "String of Hearts is a tender, succulent, evergreen perennial that is native to Southern Africa and is found along hillsides. The vines can reach up to 12 feet long in their native habitat.",
+            "size": "40cm",
+            "requirements": [
+              {"name": "🌤️ Indirect lighting"},
+              {"name": "🚿 Regular Waterings (every 1 week)"},
+              {"name": "💧 Moderate Humidity: 50%"}
+            ]
+          }
+			},
+			{
+        "id": 3,
+        "url": "product.html?id=3",
+        "info":
+          {
+            "name": "Hoya linearis",
+            "image_url": "/assets/images/plants/Hoya-linearis.jpg",
+            "price_new": "100.00",
+            "price_old": "125.00",
+            "description": "Native to the Himalayas of India, the Hoya Linearis is an evergreen species of flowering plant. The small, needle-like, succulent leaves joined to long, thin, cascading stems make the Hoya Linearis a dramatic plant.",
+            "size": "90cm",
+            "requirements": [
+              {"name": "⛅ Moderate lighting"},
+              {"name": "🚿 Regular Waterings"},
+              {"name": "💧 High Humidity: 70%"}
+            ]
+          }
+			},
+			{
+        "id": 4,
+        "url": "product.html?id=4",
+        "info":
+          {
+            "name": "Picea Glauca",
+            "image_url": "/assets/images/plants/picea.webp",
+            "price_new": "100.00",
+            "price_old": "105.00",
+            "description": "Picea glauca 'Conica' is the perfect choice when you want a miniature Christmas tree but don't have a lot of space.",
+            "size": "50cm",
+            "requirements": [
+              {"name": "☀️ Bright indirect lighting"},
+              {"name": "🪴 Fertilizing every 3 months"},
+              {"name": "💧 Moderate Humidity: 50%"}
+            ]
+          }
+			},
+			{
+        "id": 5,
+        "url": "product.html?id=5",
+        "info":
+          {
+            "name": "Calathea orbifolia",
+            "image_url": "/assets/images/plants/calathea.webp",
+            "price_new": "75.00",
+            "price_old": "85.00",
+            "description": "Calathea orbifolia is a beautiful houseplant highly sought after due to the exquisite beauty of its large, round leaves and its air-purifying qualities. ",
+            "size": "40cm",
+            "requirements": [
+              {"name": "🌤️ Indirect lighting"},
+              {"name": "🚿 Regular Waterings (every 3 weeks)"},
+              {"name": "🌡️ Temperature: 20°C"}
+            ]
+          }
+			}
+    ]
+  }

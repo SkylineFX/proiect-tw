@@ -1,3 +1,31 @@
+body[data-theme="light"] {
+  .size button {
+    background-color: var(--dark-background);
+    color: var(--background);
+  }
+  .card-name p {
+    color: var(--background);
+  }
+  .cta button {
+    background-color: var(--accent);
+  }
+}
+body[data-theme="dark"] {
+  .info svg, .old {
+    filter: invert(0.85);
+  }
+  .card-name p {
+    color: var(--text);
+  }
+  .cart-buttons img {
+    filter: invert(0.85);
+  }
+  .cta button {
+    background-color: var(--accent);
+    color: var(--text);
+  }
+}
+
 main {
   padding: 0 1em;
   padding-bottom: 1em;
@@ -70,7 +98,7 @@ main {
 }
 
 .specs ul {
-  padding: 0 1em;
+  list-style-type: none;
 }
 
 .size p, .requirements p {
@@ -90,7 +118,6 @@ main {
 .cta button {
   width: 100%;
   padding: 1em 2em;
-  background-color: var(--accent);
   outline: none;
   border: none;
   border-radius: 10px;
@@ -108,10 +135,82 @@ main {
   transform: translateY(5px) scale(0.8) !important;
 }
 
+.card {
+  max-width: 16em;
+}
+
+.card a .cover {
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.similar {
+  padding: 0 1em;
+  padding-bottom: 1em;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.similar-products {
+  display: grid;
+  gap: 10px;
+  margin: 2rem 0;
+  grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+}
+
+.card a img {
+  position: relative;
+}
+
+.card-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  display: none;
+}
+
+.card:hover img {
+  filter: brightness(0.5);
+  transition: 0.2s linear;
+}
+
+.card-name p {
+  font-size: 14px;
+  color: var(--background);
+  width: inherit;
+  text-align: center;
+}
+
+.card:hover .card-name {
+  display: block;
+}
+
+.card-name img {
+  display: none;
+}
+
 @media screen and (min-width: 640px) {
-  main {
+  main, .similar {
     padding: 0 4em; 
     padding-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .product-carousel {
+    max-width: 45vw;
+  }
+  main {
+    display: flex;
+    gap: 2em;
+  }
+  .product-description {
+    width: 40%;
   }
 }
 

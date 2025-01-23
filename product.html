@@ -23,15 +23,16 @@
           <a href="/">plantify</a>
         </div>
         <nav>
-          <a href="indoor.html">indoor</a>
-          <a href="">gifts</a>
-          <a href="">bundles</a>
-          <a href="">accessories</a>
-          <a href="/">shop all</a>
+          <a href="/product.html?id=1">indoor</a>
+          <a href="/product.html?id=0">outdoor</a>
+          <a href="/product.html?id=5">eazy-care</a>
+          <a href="/product.html?id=4">gifts</a>
+          <button class="shop-btn" onclick="scrollToShop()">shop all</a>
         </nav>
         <div class="buttons">
-          <img src="/assets/images/user.svg" alt="user icon" />
-          <img src="/assets/images/cart.svg" alt="cart icon" />
+          <img src="/assets/images/sun.svg" class="theme light" alt="theme icon"/>
+          <img src="/assets/images/moon.svg" class="theme dark" alt="theme icon"/>
+          <img src="/assets/images/cart.svg" alt="cart icon" id="cart-icon"/>
         </div>
       </div>
       <div class="nav-wrapper" id="nav-wrapper">
@@ -43,56 +44,57 @@
               id="close-nav"
             />
           </div>
-          <a href="indoor.html" class="active-link">indoor</a>
-          <a href="">gifts</a>
-          <a href="">bundles</a>
-          <a href="">accessories</a>
-          <a href="/">shop all</a>
+          <a href="/product.html?id=1" class="active-link">indoor</a>
+          <a href="/product.html?id=0">outdoor</a>
+          <a href="/product.html?id=5">eazy-care</a>
+          <a href="/product.html?id=4">gifts</a>
+          <button class="shop-btn" onclick="scrollToShop();">shop all</button>
         </div>
+
+        <div class="mobile-cart" id="mobile-cart">
+          <div class="close-mobile-cart">
+            <img src="/assets/images/close.svg" alt="close nav button" id="close-cart">
+          </div>
+          <div class="cart-items">
+            <p class="empty-message">Your cart is empty</p>
+          </div>
+          <div class="checkout-mobile-cart">
+            <button id="checkout" onclick="checkout()">Check out</button>
+          </div>
+        </div>
+      </div>
       </div>
     </header>
     <main>
       <div class="product-carousel slideshow">
         <div class="slide shown">
-          <img src="assets/images/golden-pothos.avif" alt="" />
-        </div>
-        <div class="slide">
-          <img src="assets/images/slide2.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="assets/images/slide3.jpg" alt="" />
+          <img src="" alt="" class="plant-image"/>
         </div>
       </div>
       <div class="product-description">
         <div>
-          <div class="name">Golden Pothos</div>
+          <div class="name"></div>
           <div class="price">
-            <div class="new">120.00 lei</div>
-            <div class="old">150.00 lei</div>
+            <div class="new"></div>
+            <div class="old"></div>
           </div>
         </div>
         <div class="description">
-          One of the most forgiving plants you can buy, this type of pothos
-          grows quickly when given bright light but is incredibly tolerant of
-          low light, making it an excellent low-maintenance plant for beginners.
         </div>
         <div class="specs">
           <p class="req-title">Plant information</p>
           <div class="size">
             <p>Size Of Plant</p>
-            <button>30 cm</button>
+            <button class="plant-size"></button>
           </div>
           <div class="requirements">
             <p>Care Requirements</p>
-            <ul>
-              <li>Indirect lightning</li>
-              <li>Regular Waterings (every two weeks)</li>
-              <li>Moderate humidity</li>
+            <ul class="req-list">
             </ul>
           </div>
         </div>
         <div class="cta">
-          <button>Add to cart</button>
+          <button onclick="addToCart(new URLSearchParams(window.location.search).get('id'))">Add to cart</button>
         </div>
         <div class="info">
           <svg
@@ -109,11 +111,15 @@
           </svg>
           <p>
             The plants may differ slightly from those in the images. Decorative
-            pots are not included in the price; they can be purchased separately
+            pots are not included in the price; they can be purchased separately.
           </p>
         </div>
       </div>
     </main>
+    <section class="similar">
+      <p class="req-title">Browse similar products</p>
+      <div class="similar-products"></div>
+    </section>
     <footer>
       <div class="footer-wrapper">
         <div class="footer-branding">
@@ -136,7 +142,10 @@
         </div>
       </div>
     </footer>
-    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/theme.js"></script>
     <script src="assets/js/nav.js"></script>
+    <script src="assets/js/loadProduct.js"></script>
+    <script src="assets/js/similarProducts.js"></script>
+    <script src="assets/js/cart.js"></script>
   </body>
 </html>

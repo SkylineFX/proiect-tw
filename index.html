@@ -22,15 +22,16 @@
           <a href="/">plantify</a>
         </div>
         <nav>
-          <a href="indoor.html">indoor</a>
-          <a href="">gifts</a>
-          <a href="">bundles</a>
-          <a href="">accessories</a>
-          <a href="/">shop all</a>
+            <a href="/product.html?id=1">indoor</a>
+            <a href="/product.html?id=0">outdoor</a>
+            <a href="/product.html?id=5">eazy-care</a>
+            <a href="/product.html?id=4">gifts</a>
+          <button class="shop-btn" onclick="scrollToShop()">shop all</button>
         </nav>
         <div class="buttons">
-          <img src="/assets/images/user.svg" alt="user icon" />
-          <img src="/assets/images/cart.svg" alt="cart icon" />
+          <img src="/assets/images/sun.svg" class="theme light" alt="theme icon"/>
+          <img src="/assets/images/moon.svg" class="theme dark" alt="theme icon"/>
+          <img src="/assets/images/cart.svg" alt="cart icon" id="cart-icon"/>
         </div>
       </div>
       <div class="nav-wrapper" id="nav-wrapper">
@@ -38,11 +39,23 @@
           <div class="close-mobile-nav">
             <img src="/assets/images/close.svg" alt="close nav button" id="close-nav">
           </div>
-            <a href="indoor.html">indoor</a>
-            <a href="">gifts</a>
-            <a href="">bundles</a>
-            <a href="">accessories</a>
-            <a href="/">shop all</a>
+            <a href="/product.html?id=1">indoor</a>
+            <a href="/product.html?id=0">outdoor</a>
+            <a href="/product.html?id=5">eazy-care</a>
+            <a href="/product.html?id=4">gifts</a>
+            <button class="shop-btn" onclick="scrollToShop()">shop all</button>
+        </div>
+
+        <div class="mobile-cart" id="mobile-cart">
+          <div class="close-mobile-cart">
+            <img src="/assets/images/close.svg" alt="close nav button" id="close-cart">
+          </div>
+          <div class="cart-items">
+            <p class="empty-message">Your cart is empty</p>
+          </div>
+          <div class="checkout-mobile-cart">
+            <button id="checkout" onclick="checkout()">Check out</button>
+          </div>
         </div>
       </div>
 
@@ -69,7 +82,7 @@
             <p class="slide-description">
               Easy-to-care-for plants that need direct sunlight and minimal watering.
             </p>
-            <a href="" class="cta">Shop now</a>
+            <a href="product.html?id=0" class="cta">Shop now</a>
           </div>
         </div>
         <div class="slide">
@@ -81,7 +94,7 @@
             <p class="slide-description">
               Natural air purifier for healthier, cleaner indoor spaces.
             </p>
-            <a href="" class="cta">Shop now</a>
+            <a href="product.html?id=1" class="cta">Shop now</a>
           </div>
         </div>
         <div class="slide">
@@ -93,80 +106,21 @@
             <p class="slide-description">
               For those who love plants, there's no better gift than one that helps them enhance their home oasis.
             </p>
-            <a href="" class="cta">Shop now</a>
+            <a href="product.html?id=4" class="cta">Shop now</a>
           </div>
         </div>
       </div>
       <div class="shop">
-        <h3>Shop by category</h3>
+        <h3 id="shop">Shop our products</h3>
         <div class="categories">
-          <div class="card">
-            <a href="indoor.html">
-              <img src="assets/images/plant0.jpeg" class="cover" alt="" />
-              <div class="card-name">
-                <p>Indoor</p>
-                <img src="assets/images/arrow-right.svg" alt="" />
-              </div>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="">
-              <img src="assets/images/plant1.jpeg" class="cover" alt="" />
-              <div class="card-name">
-                <p>Gifts</p>
-                <img src="assets/images/arrow-right.svg" alt="" />
-              </div>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="">
-              <img src="assets/images/plant2.jpeg" class="cover" alt="" />
-              <div class="card-name">
-                <p>Bundles</p>
-                <img src="assets/images/arrow-right.svg" alt="" />
-              </div>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="">
-              <img src="assets/images/plant3.jpeg" class="cover" alt="" />
-              <div class="card-name">
-                <p>Pot Plants</p>
-                <img src="assets/images/arrow-right.svg" alt="" />
-              </div>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="">
-              <img src="assets/images/plant4.jpeg" class="cover" alt="" />
-              <div class="card-name">
-                <p>Rare Plants</p>
-                <img src="assets/images/arrow-right.svg" alt="" />
-              </div>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="">
-              <img src="assets/images/plant5.jpeg" class="cover" alt="" />
-              <div class="card-name">
-                <p>Small Plants</p>
-                <img src="assets/images/arrow-right.svg" alt="" />
-              </div>
-            </a>
-          </div>
         </div>
         <div class="presentation">
           <div class="presentation-text">
-            <h4>SUSTAINABLE Houseplant Delivery</h4>
-              <p>Welcome to our exclusive collection of rare houseplants, a botanical marvel that will captivate plant enthusiasts and elevate any indoor garden. Each rare plant in our meticulously nurtured collection boasts unique features, making them highly sought-after additions. Explore our rare houseplant collection, available at our nursery, and bring home a touch of botanical splendor. Happy houseplants is the best place to buy rare plants!</p>
+            <h4>Houseplants Made Eazy</h4>
+              <p>Each of our plants is carefully nurtured to ensure they are healthy and ready to brighten up your space. Whether you're new to plants or already a pro, we have got a wide range of options to suit your home or workspace. Add a touch of green, enjoy the benefits of cleaner air, and create a fresher, more inviting environment, hassle-free.</p>
           </div>
           <div class="presentation-image">
-            <img src="assets/images/gift.jpg" alt="" />
+            <img src="assets/images/mission.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -179,7 +133,7 @@
         <form class="newsletter-form">
           <form action="">
           <input required type="email" class="email"/>
-          <input type="submit" class="submit-email"/>
+          <input type="submit" class="submit-email" pattern="/^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gm"/>
         </form>
       </div>
     </main>
@@ -205,7 +159,10 @@
         </div>
       </div>
     </footer>
+    <script src="assets/js/theme.js"></script>
     <script src="assets/js/nav.js"></script>
     <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
   </body>
 </html>
