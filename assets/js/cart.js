@@ -34,7 +34,7 @@ async function addToCart(currentProductId, newProduct = true) {
 
 async function fetchProduct(currentProductId) {
   const response = await fetch('./assets/products.json');
-  const json = await response.json();
+  const json = response.json();
   return json.product.find(product => product.id == currentProductId);
 }
 
