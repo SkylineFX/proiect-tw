@@ -121,6 +121,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* transition: 0.4s all; */
 }
 
 .sidenav,
@@ -139,6 +140,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* transition: 0.4s all; */
 }
 
 .nav-wrapper {
@@ -219,13 +221,25 @@ header {
 }
 
 .checkout-mobile-cart button:hover,
-.cta button:hover {
+.cta button:active {
   animation: spring 200ms forwards 1;
+}
+
+.cta button {
+  transition: 0.4s all;
+}
+
+.cta button:hover {
+  background-color: var(--text) !important;
+  color: var(--background) !important;
+}
+
+.cart-buttons img {
+  transition: 0.2s all;
 }
 
 .cart-buttons img:hover {
   scale: 1.1;
-  transition: 0.2s all;
 }
 
 .active-nav {
@@ -362,6 +376,7 @@ nav {
 
 nav a,
 header nav .shop-btn {
+  font-family: "Montserrat", serif;
   background-color: transparent;
   outline: none;
   border: none;
@@ -815,6 +830,7 @@ footer img {
   .mobile-cart,
   .mobile-nav {
     width: 100vw;
+    max-width: 20em;
   }
 
   #shop {

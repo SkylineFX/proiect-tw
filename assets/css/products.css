@@ -8,6 +8,7 @@ body[data-theme="light"] {
   }
   .cta button {
     background-color: var(--accent);
+    color: var(--background);
   }
 }
 body[data-theme="dark"] {

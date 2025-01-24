@@ -84,16 +84,23 @@ function createCartItem(currentProduct) {
   items.appendChild(cartItem);
 }
 
-function checkout() {
+async function checkout() {
   localStorage.setItem('cart', new Array(0));
 
   for (let i = items.children.length - 1; i > 0; i--) {
     items.children[i].remove();
   }
 
+  const wait = async (s) => new Promise(resolve => setTimeout(resolve, s * 1000));
+
+  emptyMessage.innerHTML = "Thank you for your purchase!<br/>Your order will be delivered soon.";
   emptyMessage.style.display = 'flex';
   checkoutBtn.style.display = 'none';
 
+  await wait(3);
   mobileCart.classList.remove("active-cart");
   navWrapper.classList.remove("active-nav");
+
+  await wait(0.4) // wait for cart to close
+  emptyMessage.textContent = "Your cart is empty";
 }
